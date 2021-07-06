@@ -1,0 +1,37 @@
+{
+  "easycom": {
+    "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+    "^base-(.*)": "@/components/base-$1/base-$1.vue"
+  },
+  "pages": [
+    {
+      "path": "pages/index/index"
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "标题",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#00C587",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/goods/index",
+        "iconPath": "static/goods.png",
+        "selectedIconPath": "static/goods-active.png",
+        "text": "商品"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "static/user.png",
+        "selectedIconPath": "static/user-active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

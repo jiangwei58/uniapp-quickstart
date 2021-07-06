@@ -1,0 +1,95 @@
+.u-flex-col {
+  flex-direction: column;
+}
+
+@for $i from 41 through 100 {
+  .u-font-#{$i} {
+    font-size: #{$i}rpx;
+  }
+}
+
+@for $i from 10 through 60 {
+  .line-h-#{$i} {
+    line-height: #{$i}rpx;
+  }
+}
+
+@for $i from 0 through 80 {
+  @if $i % 2 == 0 or $i % 5 == 0 {
+    .u-m-lr-#{$i} {
+      margin-left: $i + rpx;
+      margin-right: $i + rpx;
+    }
+
+    .u-m-tb-#{$i} {
+      margin-top: $i + rpx;
+      margin-bottom: $i + rpx;
+    }
+
+    .u-p-lr-#{$i} {
+      padding-top: $i + rpx;
+      padding-bottom: $i + rpx;
+    }
+
+    .u-p-tb-#{$i} {
+      padding-top: $i + rpx;
+      padding-bottom: $i + rpx;
+    }
+  }
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.block {
+  display: block;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.color-primary {
+  color: $u-type-primary;
+}
+
+.color-title {
+  color: #222222;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-white-transparent {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.color-black {
+  color: #282828;
+}
+
+.color-black2 {
+  color: #323233;
+}
+
+.color-gray {
+  color: #28282880;
+}
+
+.color-gray2 {
+  color: #32323380;
+}
+
+.color-red {
+  color: #f46500;
+}
+
+.color-red2 {
+  color: #f4650080;
+}
